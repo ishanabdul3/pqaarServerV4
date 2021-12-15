@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pqaar_route_origins",
+  "info": {
+    "singularName": "pqaar-route-origin",
+    "pluralName": "pqaar-route-origins",
+    "displayName": "pqaarRouteOrigin"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "routeOrigin": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pqaar_users",
+  "info": {
+    "singularName": "pqaar-user",
+    "pluralName": "pqaar-users",
+    "displayName": "pqaarUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "userType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-type.user-type"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "pqaarTrucks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::truck.truck"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pqaar_routes",
+  "info": {
+    "singularName": "pqaar-route",
+    "pluralName": "pqaar-routes",
+    "displayName": "pqaarRoute",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trucksRequired": {
+      "type": "integer"
+    },
+    "trucksBooked": {
+      "type": "integer"
+    },
+    "additionalInfo": {
+      "type": "richtext"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "routePrice": {
+      "type": "integer"
+    },
+    "pqaarRouteOrigin": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pqaar-route-origin.pqaar-route-origin"
+    },
+    "pqaarRouteTermination": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pqaar-route-termination.pqaar-route-termination"
+    }
+  }
+}

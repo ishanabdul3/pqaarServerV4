@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pqaar_bid_statuses",
+  "info": {
+    "singularName": "pqaar-bid-status",
+    "pluralName": "pqaar-bid-statuses",
+    "displayName": "pqaarBidStatus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bidStatus": {
+      "type": "string"
+    }
+  }
+}

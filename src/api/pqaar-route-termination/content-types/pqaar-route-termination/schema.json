@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pqaar_route_terminations",
+  "info": {
+    "singularName": "pqaar-route-termination",
+    "pluralName": "pqaar-route-terminations",
+    "displayName": "pqaarRouteTermination"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "routeTermination": {
+      "type": "string"
+    }
+  }
+}

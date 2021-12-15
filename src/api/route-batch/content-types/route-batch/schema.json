@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "route_batches",
+  "info": {
+    "singularName": "route-batch",
+    "pluralName": "route-batches",
+    "displayName": "pqaarRouteBatch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "batchName": {
+      "type": "string"
+    },
+    "additionalInfo": {
+      "type": "text"
+    },
+    "pqaarRoutes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pqaar-route.pqaar-route"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pqaar_auction_batches",
+  "info": {
+    "singularName": "pqaar-auction-batch",
+    "pluralName": "pqaar-auction-batches",
+    "displayName": "pqaarAuctionBatch",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "batchName": {
+      "type": "string"
+    },
+    "additionalInfo": {
+      "type": "text"
+    },
+    "unlockOffsetTime": {
+      "type": "time"
+    },
+    "auctionStartAt": {
+      "type": "datetime"
+    },
+    "auctionEndAt": {
+      "type": "datetime"
+    },
+    "bonusTime": {
+      "type": "time"
+    },
+    "pqaarAuctions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pqaar-auction.pqaar-auction"
+    }
+  }
+}

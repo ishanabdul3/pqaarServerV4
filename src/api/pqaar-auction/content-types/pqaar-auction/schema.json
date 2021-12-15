@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pqaar_auctions",
+  "info": {
+    "singularName": "pqaar-auction",
+    "pluralName": "pqaar-auctions",
+    "displayName": "pqaarAuction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pqaarTruck": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::truck.truck"
+    },
+    "pqaarBidStatus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pqaar-bid-status.pqaar-bid-status"
+    },
+    "pqaarRoute": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pqaar-route.pqaar-route"
+    }
+  }
+}

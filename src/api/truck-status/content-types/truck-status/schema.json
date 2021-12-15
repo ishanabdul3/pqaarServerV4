@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "truck_statuses",
+  "info": {
+    "singularName": "truck-status",
+    "pluralName": "truck-statuses",
+    "displayName": "pqaarTruckStatus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "string"
+    }
+  }
+}
